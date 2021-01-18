@@ -8,3 +8,5 @@ scikit-learn
 jupyterlab
 dvc[s3]
 kaggle
+matplotlib
+seaborn
