@@ -22,11 +22,18 @@ backcall==0.2.0
     # via ipython
 bleach==3.2.1
     # via nbconvert
+boto3==1.16.56
+    # via dvc
+botocore==1.19.56
+    # via
+    #   boto3
+    #   s3transfer
 brotli==1.0.9
     # via flask-compress
 certifi==2020.12.5
     # via
     #   dulwich
+    #   kaggle
     #   requests
 cffi==1.14.4
     # via argon2-cffi
@@ -74,7 +81,7 @@ dpath==2.0.1
     # via dvc
 dulwich==0.20.15
     # via dvc
-dvc==1.11.10
+dvc[s3]==1.11.10
     # via -r requirements.in
 entrypoints==0.3
     # via nbconvert
@@ -130,6 +137,10 @@ jinja2==2.11.2
     #   jupyterlab-server
     #   nbconvert
     #   notebook
+jmespath==0.10.0
+    # via
+    #   boto3
+    #   botocore
 joblib==1.0.0
     # via scikit-learn
 json5==0.9.5
@@ -164,6 +175,8 @@ jupyterlab-pygments==0.1.2
 jupyterlab-server==2.1.2
     # via jupyterlab
 jupyterlab==3.0.5
+    # via -r requirements.in
+kaggle==1.5.10
     # via -r requirements.in
 mailchecker==4.0.3
     # via python-benedict
@@ -265,13 +278,17 @@ python-benedict==0.23.1
     # via dvc
 python-dateutil==2.8.1
     # via
+    #   botocore
     #   jupyter-client
+    #   kaggle
     #   pandas
     #   python-benedict
 python-fsutil==0.4.0
     # via python-benedict
 python-slugify==4.0.1
-    # via python-benedict
+    # via
+    #   kaggle
+    #   python-benedict
 pytz==2020.5
     # via
     #   babel
@@ -287,6 +304,7 @@ requests==2.25.1
     # via
     #   dvc
     #   jupyterlab-server
+    #   kaggle
     #   python-benedict
     #   python-fsutil
 retrying==1.3.3
@@ -295,6 +313,8 @@ rich==9.8.2
     # via dvc
 ruamel.yaml==0.16.12
     # via dvc
+s3transfer==0.3.4
+    # via boto3
 scikit-learn==0.24.0
     # via -r requirements.in
 scipy==1.6.0
@@ -315,6 +335,7 @@ six==1.15.0
     #   flatten-dict
     #   jsonpath-ng
     #   jsonschema
+    #   kaggle
     #   pathlib2
     #   plotly
     #   python-benedict
@@ -349,7 +370,9 @@ tornado==6.1
     #   notebook
     #   terminado
 tqdm==4.56.0
-    # via dvc
+    # via
+    #   dvc
+    #   kaggle
 traitlets==5.0.5
     # via
     #   ipykernel
@@ -367,7 +390,9 @@ typing-extensions==3.7.4.3
     #   rich
 urllib3==1.26.2
     # via
+    #   botocore
     #   dulwich
+    #   kaggle
     #   requests
 voluptuous==0.12.1
     # via dvc

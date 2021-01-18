@@ -6,4 +6,5 @@ pandas
 numpy
 scikit-learn
 jupyterlab
-dvc
+dvc[s3]
+kaggle

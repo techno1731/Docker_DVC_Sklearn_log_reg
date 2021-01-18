@@ -1,4 +1,4 @@
-# RandonForestRegressor with Sklearn deployed on Dash
+# Logistic Regression with Sklearn with a Dash front end delpoyed with Docker on AWS
 
 **Powered by:**
 
